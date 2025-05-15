@@ -4,13 +4,16 @@
 
 ---
 
-## 🧩 Features
+## �� Features
 
-- 🖊️ **Code Panel** – Clean, distraction-free editing experience
-- 💬 **Chat Panel** – Built-in assistant or team collaboration window
-- 💻 **Terminal Panel** – Fully integrated shell for instant execution
-- 🧠 **AI Prompt Support** – Connect to OpenAI or local LLMs
-- 🧰 **Plugin System** – Lightweight plugin API (planned)
+- 🖊️ **Notepad-like Code Panel** – Fast, distraction-free editing with Monaco Editor
+  - New/Open/Save file operations (supports .txt, .js, .ts, .jsx, .tsx, .html, .css, .json)
+  - Syntax highlighting, auto-indentation, bracket matching, and more
+- 💬 **Chat Panel** – Built-in AI assistant (OpenAI or mock, configurable)
+  - Send messages and get instant AI responses
+- 💻 **Terminal Panel** – Interactive shell-like terminal (xterm.js)
+  - Supports basic commands: `help`, `clear`, `echo`, `exit`
+- 🧠 **AI Prompt Support** – Connect to OpenAI or use a local mock LLM
 - 🌙 **Dark & Light Themes** – With auto system detection
 - ⚡ **Cross-platform** – Runs on Windows, macOS, Linux
 
@@ -23,7 +26,7 @@
 ```bash
 git clone https://github.com/makalin/CodeRelay.git
 cd CodeRelay
-````
+```
 
 ### 2. Install dependencies
 
@@ -45,21 +48,50 @@ npm run build
 
 ---
 
+## 📝 Usage Notes
+
+### Code Editor (Notepad Mode)
+- **New File:** Click `New` to start a blank file.
+- **Open File:** Click `Open` to load a `.txt`, `.js`, `.ts`, `.jsx`, `.tsx`, `.html`, `.css`, or `.json` file.
+- **Save File:** Click `Save` or use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>S</kbd> to download the current file.
+- **Syntax Highlighting:** Automatically detects language based on file extension.
+- **Performance:** Optimized for fast typing and large files.
+
+### Chat Panel (AI Assistant)
+- **Send a message:** Type and press `Send` or <kbd>Enter</kbd>.
+- **API Setup:**
+  - To use OpenAI, create a `.env` file in the project root:
+    ```
+    OPENAI_API_KEY=your_openai_api_key_here
+    ```
+  - By default, a mock AI is used for development/testing.
+
+### Terminal Panel
+- **Commands:**
+  - `help` – Show available commands
+  - `clear` – Clear the terminal
+  - `echo <text>` – Print text
+  - `exit` – Print goodbye message
+- **Note:** This is a simulated shell for demonstration, not a real system shell.
+
+---
+
 ## 🛠️ Tech Stack
 
 * ⚙️ **Electron** – Cross-platform desktop support
 * 🎨 **Vite + React** – Lightning-fast UI rendering
-* 🧠 **Chat Integration** – OpenAI API / Ollama / Local LLM options
+* 🧠 **Chat Integration** – OpenAI API / Mock LLM
 * 🖥️ **xterm.js** – Embedded terminal support
-* 💾 **Monaco Editor** – VSCode-level code editing
+* 💾 **Monaco Editor** – Notepad-like code editing
 
 ---
 
 ## 🌐 Roadmap
 
-* [x] Basic layout (code / chat / terminal)
-* [x] Terminal integration
-* [x] Chat API integration
+* [x] Notepad-like code editing (New/Open/Save)
+* [x] Fast Monaco Editor integration
+* [x] Terminal with basic commands
+* [x] AI Chat API integration (OpenAI/Mock)
 * [ ] Theme support
 * [ ] Plugin system
 * [ ] Custom keybindings
