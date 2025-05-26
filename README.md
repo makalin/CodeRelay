@@ -4,15 +4,40 @@
 
 ---
 
-## �� Features
+## 🎯 Features
 
 - 🖊️ **Notepad-like Code Panel** – Fast, distraction-free editing with Monaco Editor
   - New/Open/Save file operations (supports .txt, .js, .ts, .jsx, .tsx, .html, .css, .json)
   - Syntax highlighting, auto-indentation, bracket matching, and more
+  - Code analysis and metrics (complexity, functions, classes, etc.)
+  - Code formatting and improvement suggestions
 - 💬 **Chat Panel** – Built-in AI assistant (OpenAI or mock, configurable)
   - Send messages and get instant AI responses
+  - Code snippet sharing and management
+  - Message history and search
 - 💻 **Terminal Panel** – Interactive shell-like terminal (xterm.js)
   - Supports basic commands: `help`, `clear`, `echo`, `exit`
+  - Customizable appearance and behavior
+- 🎨 **Theme System**
+  - Dark, Light, and High Contrast themes
+  - Custom color palette generation
+  - Theme persistence and auto-detection
+- ⚙️ **Settings Management**
+  - Editor, Terminal, and Chat preferences
+  - Keyboard shortcuts customization
+  - Settings import/export
+- ⌨️ **Keyboard Shortcuts**
+  - Global and component-specific shortcuts
+  - Customizable key bindings
+  - Shortcut help and documentation
+- 📦 **File Management**
+  - Advanced file operations
+  - File watching and history
+  - Directory navigation and search
+- 🧩 **Code Snippets**
+  - Snippet library with templates
+  - Language-specific snippets
+  - Snippet import/export
 - 🧠 **AI Prompt Support** – Connect to OpenAI or use a local mock LLM
 - 🌙 **Dark & Light Themes** – With auto system detection
 - ⚡ **Cross-platform** – Runs on Windows, macOS, Linux
@@ -51,20 +76,22 @@ npm run build
 ## 📝 Usage Notes
 
 ### Code Editor (Notepad Mode)
-- **New File:** Click `New` to start a blank file.
-- **Open File:** Click `Open` to load a `.txt`, `.js`, `.ts`, `.jsx`, `.tsx`, `.html`, `.css`, or `.json` file.
-- **Save File:** Click `Save` or use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>S</kbd> to download the current file.
-- **Syntax Highlighting:** Automatically detects language based on file extension.
-- **Performance:** Optimized for fast typing and large files.
+- **New File:** Click `New` or use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>N</kbd>
+- **Open File:** Click `Open` or use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>O</kbd>
+- **Save File:** Click `Save` or use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>S</kbd>
+- **Find in File:** Use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>F</kbd>
+- **Format Document:** Use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>
+- **Toggle Comment:** Use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>/</kbd>
+- **Undo/Redo:** Use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>Z</kbd>/<kbd>Y</kbd>
 
 ### Chat Panel (AI Assistant)
-- **Send a message:** Type and press `Send` or <kbd>Enter</kbd>.
+- **Send a message:** Type and press `Send` or <kbd>Enter</kbd>
 - **API Setup:**
   - To use OpenAI, create a `.env` file in the project root:
     ```
     OPENAI_API_KEY=your_openai_api_key_here
     ```
-  - By default, a mock AI is used for development/testing.
+  - By default, a mock AI is used for development/testing
 
 ### Terminal Panel
 - **Commands:**
@@ -72,7 +99,14 @@ npm run build
   - `clear` – Clear the terminal
   - `echo <text>` – Print text
   - `exit` – Print goodbye message
-- **Note:** This is a simulated shell for demonstration, not a real system shell.
+- **Note:** This is a simulated shell for demonstration, not a real system shell
+
+### Settings & Customization
+- **Theme Selection:** Choose from Dark, Light, or High Contrast themes
+- **Editor Settings:** Customize font, size, line height, and more
+- **Terminal Settings:** Adjust appearance and behavior
+- **Chat Settings:** Configure message display and formatting
+- **Keyboard Shortcuts:** View and customize key bindings
 
 ---
 
@@ -83,6 +117,11 @@ npm run build
 * 🧠 **Chat Integration** – OpenAI API / Mock LLM
 * 🖥️ **xterm.js** – Embedded terminal support
 * 💾 **Monaco Editor** – Notepad-like code editing
+* 🎯 **TypeScript** – Type-safe development
+* 📦 **File System** – Advanced file operations
+* 🎨 **Theme System** – Customizable appearance
+* ⌨️ **Shortcut Manager** – Keyboard shortcuts
+* ⚙️ **Settings Manager** – User preferences
 
 ---
 
@@ -92,10 +131,15 @@ npm run build
 * [x] Fast Monaco Editor integration
 * [x] Terminal with basic commands
 * [x] AI Chat API integration (OpenAI/Mock)
-* [ ] Theme support
+* [x] Theme support
+* [x] Settings management
+* [x] Keyboard shortcuts
+* [x] Code analysis and metrics
+* [x] Snippet management
 * [ ] Plugin system
-* [ ] Custom keybindings
 * [ ] Cloud sync support
+* [ ] Git integration
+* [ ] Debug support
 
 ---
 
@@ -113,7 +157,7 @@ git push origin feature/my-feature
 
 ## 📄 License
 
-MIT © [Your Name](https://github.com/makalin)
+MIT © [Mehmet T. AKALIN](https://github.com/makalin)
 
 ---
 
